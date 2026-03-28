@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/comentarios.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Admirable <img src="../Img/LogoToMusic.png" height="70"> Storage</h1>
+    </header>
+    <nav>
+        <div class="menuOpt" onclick="location.href = 'catalogo.html'"><strong>Catalogo</strong></div>
+        <div class="menuOpt" onclick="location.href = 'exponentes.html'"><strong>Exponentes</strong></div>
+        <div class="menuOpt" onclick="location.href = '../index.html'"><strong>Index</strong></div>
+        <div class="menuOpt" onclick="location.href = 'curiosidades.html'"><strong>Curiosidades</strong></div>
+        <div class="menuOpt" onclick="location.href = 'comentarios.html'"><strong>Comentar</strong></div>
+    </nav>
+    <main>
+        <h2 align="center">Comentarios sobre tus bandas favoritas</h2>
+        <article style="display: flex;flex-direction:row;width: 100%;">
+            <section id="menu">
+                <div style="display: flex;">
+                    <button class="Mopt">Rock en español <div onclick="set('Rock en español')"></div></button>
+                    <button class="Mopt">Funk <div onclick="set('Funk')"></div></button>
+                    <button class="Mopt">Nu metal <div onclick="set('Nu Metal')"></div></button>
+                    <button class="Mopt">Metal <div onclick="set('Metal')"></div></button>
+                </div>
+                <div>
+                    <div class="row">
+                        <img src="" alt="" class="tip">
+                        <img src="" alt="" class="tip">
+                        <img src="" alt="" class="tip">
+                        <img src="" alt="" class="tip">
+                    </div>
+                    <div class="row">
+                        <img src="" alt="" class="tip">
+                        <img src="" alt="" class="tip">
+                        <img src="" alt="" class="tip">
+                        <img src="" alt="" class="tip">
+                    </div>
+                </div>
+            </section>
+            <section id="form">
+                <form action="" >
+                    <h2 id="sexBand">Selecciona un album</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="mane">Nombre del usuario</label>
+                            </td>
+                            <td class="input">
+                                <input type="text" id="mane" name="mane" required><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Calif" id="MSG">Calificacion (5)</label> 
+                            </td>
+                            <td class="input">
+                                <input type="range" name="Calif" id="Calif" min="1" max="10" required><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Titular">Titular del comentario</label>
+                            </td>
+                            <td class="input">
+                                <input type="text" id="Titular" name="Titular" required><br>
+                            </td>
+                        </tr>
+                    </table>
+                    <label for="comenta">Comentario</label><br>
+                    <textarea name="comenta" id="comenta" required>
+
+                    </textarea>
+                    <input type="submit" value="Publicar">
+                </form>
+            </section>
+        </article>
+        <hr>
+        <article id="repodruc">
+            <div style="position: relative;display: flex;flex-direction: row;position: relative; justify-content: center;align-items: center;border: 2px solid black;width: 40%;">
+                <img id="vin" src="../Img/Vinilo.webp" alt="" style="width: 200px;height: 200px;z-index: 1;position: absolute;left: 50%;">
+                <img id="Portad" src="../Img/Walpapa.webp" alt="" style="width: 230px;height: 230px;z-index: 2;">
+                
+            </div>
+            <div id="datax" style="width: 60%;border: 2px solid black;padding: 5px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                <h2>Nombre del disco</h2>
+                <h3>Nombre de la banda</h3>
+                <div id="stars"></div>
+                <div id="contain">
+                    <div id="progress"></div>
+                </div>
+                <div>
+                    <img src="../Img/Back.png" alt="" height="40" class="ctls" id="bck">
+                    <img src="../Img/Play.png" alt="" height="40" class="ctls" id="play">
+                    <img src="../Img/Next.png" alt="" height="40" class="ctls" id="nxt">
+                </div>
+            </div>
+        </article>
+        <article id="lista-comentarios">
+
+        </article>
+    </main>
+    <footer>
+        <div>
+            <h4>Créditos a las disqueras y a las bandas</h4>
+            <h4>Créditos personales</h4>
+        </div>
+        <div>
+            <img src="../Img/DA.png" alt="" height="60">
+            <img src="../Img/Facebook.png" alt="" height="60">
+            <img src="../Img/Itch.io.png" alt="" height="60">
+            <img src="../Img/Tiktok.png" alt="" height="60">
+            <img src="../Img/Youtube.png" alt="" height="60">
+        </div>
+    </footer>
+    <script src="../JS/comentarios.js"></script>
+</body>
+</html>
