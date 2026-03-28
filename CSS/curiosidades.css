@@ -1,0 +1,216 @@
+@import url(fuentes.css);
+/* Modern browsers — Chrome 121+, Edge 121+, Firefox, Safari 18.2+ */
+* {
+  scrollbar-width: 10px;
+  scrollbar-color: #94a9cc #4b4c4e;
+}
+
+/* Legacy WebKit — older Chrome/Edge/Safari, radius, borders & shadows */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #4b4c4e;
+  border-radius: 16px;
+  padding: 1px;
+  border: 1px solid #2e2e2e;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #4d4d4d;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #caba96;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #94a9cc;
+  border-radius: 15px;
+  min-height: 35px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #3e63b1;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #d7af1d;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/**************************************/
+body, html{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column
+}
+header *, main *,footer *{
+    user-select: none;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+}
+
+h1:first-of-type{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-family: "HelpMe" , 'Courier New', Courier, monospace;
+}
+h1:first-of-type *{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.menuOpt{
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%); 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    width: 18%;
+    padding: 5px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 25px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 12px 0px -3px rgba(0,0,0,0.72); 
+    font-family: "CageWorld",'Courier New', Courier, monospace;
+    font-size: 20px;
+    box-shadow: 0px 12px 0px -3px rgba(0,0,0,0.72);
+    transition: 0.3s;
+}
+.menuOpt strong{
+     clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    width: 100%;
+    height: 25px;
+    transition: 0.3s;
+
+}
+.menuOpt:hover strong{
+    background-color: chartreuse;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    display: flex;
+}
+footer div:first-of-type{
+    border-right:3px solid white ;
+    width: 70%;
+}
+footer div:nth-child(2)>img{
+    margin: 5px;
+    cursor:pointer;
+    transition: 0.4s;
+}
+footer div:nth-child(2)>img:hover{
+    transform: scale(1.2);
+}
+footer div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  30%;
+}
+#datos{
+    display: flex;
+    flex-direction: row;
+}
+#sans{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.dir{
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.dir:hover{
+    filter: brightness(0%);
+    height: 70px;
+}
+.sec{
+    height: 100px;
+}
+#main{
+    height: 200px;
+}
+#SecC{
+    height: 300px;
+}
+.Selec{
+    height: 160px;
+}
+.Selec,.Another{
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Another{
+    height: 130px;   
+}
+#gallery{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 85%;
+    justify-content: center;
+    align-items: flex-end;
+}
+#gallery img:nth-child(3){
+    border: 3px solid #d7af1d ;
+}
+.datos{
+    background-color: #f2fcff;
+    margin: 10px;
+    -webkit-box-shadow: 6px 5px 1px 0px rgba(0,0,0,0.82); 
+    box-shadow: 6px 5px 1px 0px rgba(0,0,0,0.82);
+    padding: 10px;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    text-align: center;
+}
